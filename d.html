@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Syntax Showcase</title>
+    <style>
+        /* Universal Selector */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Box Model */
+        .box-model {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #000;
+            background-color: lightblue;
+        }
+
+        /* Positioning */
+        .positioning {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            z-index: 2;
+        }
+
+        /* Flexbox */
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: lightcoral;
+            padding: 10px;
+        }
+
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        /* Grid */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border: 1px solid black;
+            height: 50px;
+            text-align: center;
+        }
+
+        /* Typography */
+        .typography {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: darkblue;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        /* Backgrounds */
+        .background {
+            background-color: lightgreen;
+            background-image: url('https://via.placeholder.com/50');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        /* Transitions */
+        .transition:hover {
+            background-color: lightcoral;
+            transition: background-color 0.5s;
+        }
+
+        /* Pseudo-classes and elements */
+        .pseudo-class:hover {
+            color: red;
+        }
+
+        .pseudo-element::after {
+            content: ' - Styled';
+            color: green;
+        }
+
+        /* Media Queries */
+        @media (max-width: 600px) {
+            .media-query {
+                background-color: lightpink;
+                font-size: 12px;
+            }
+        }
+
+        /* Code block styling */
+        pre {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Syntax Showcase</h1>
+
+    <h2>Box Model</h2>
+        <div class="box-model">This is a box-model example.</div>
+
+    <h2>Positioning</h2>
+        <div class="positioning">Positioned element</div>
+
+    <h2>Flexbox</h2>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+        </div>
+
+    <h2>Grid</h2>
+        <div class="grid-container">
+            <div class="grid-item">A</div>
+            <div class="grid-item">B</div>
+            <div class="grid-item">C</div>
+        </div>
+
+    <h2>Typography</h2>
+        <div class="typography">This is a typography example</div>
+
+    <h2>Backgrounds</h2>
+        <div class="background">Background example</div>
+
+    <h2>Transitions</h2>
+        <div class="transition">Hover over me</div>
+
+    <h2>Pseudo-classes and Elements</h2>
+        <div class="pseudo-class">Hover over this text</div>
+        <div class="pseudo-element">This has a pseudo-element</div>
+
+    <h2>Media Queries</h2>
+        <div class="media-query">Resize the browser to see me change</div>
+</body>
+</html>
